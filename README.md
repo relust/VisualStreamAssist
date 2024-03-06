@@ -1,5 +1,5 @@
 # VisualStreamAssist
-Through this project I wanted to add to the integration of AlexxIT [StreamAssist](https://github.com/AlexxIT/StreamAssist) personalized and visual responses to be played on an android tablet using the browser mod.
+Through this project I wanted to add to AlexxIT integration  [StreamAssist](https://github.com/AlexxIT/StreamAssist) personalized and visual responses to be played on an android tablet using the browser mod.
 
 ## Pre-requisites
 
