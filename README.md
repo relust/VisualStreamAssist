@@ -1,5 +1,13 @@
 # VisualStreamAssist
 Through this project I wanted to add to the integration of AlexxIT [StreamAssist](https://github.com/AlexxIT/StreamAssist) personalized and visual responses to be played on an android tablet using the browser mod.
+
+## Pre-requisites
+
+- Home Assistant 2023.11.3 or newer
+- A voice assistant [configured in HA](https://my.home-assistant.io/redirect/voice_assistants/) with STT and TTS in a language of your choice
+- Install Browser Mod integration with HACS. The browser mod media player of android tablet will be used to stream gif files with browser_mod.popup service and audio responses with browser mod media player
+- Optionally install Fully kiosk browser on android tablet and Fully Kiosk Browser integration on Home Assistant.
+
 ## Installation
 
 [HACS](https://hacs.xyz/) > Integrations > 3 dots (upper top corner) > Custom repositories > URL: `https://github.com/relust/VisualStreamAssist`, Category: Integration > Add > wait > Stream Assist > Install
