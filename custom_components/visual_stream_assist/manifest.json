@@ -1,17 +1,17 @@
 {
-  "domain": "stream_assist",
-  "name": "Stream Assist",
+  "domain": "visual_stream_assist",
+  "name": "Visual Stream Assist",
   "codeowners": [
-    "@AlexxIT"
+    "@relust"
   ],
   "config_flow": true,
   "dependencies": [
     "stream",
     "assist_pipeline"
   ],
-  "documentation": "https://github.com/AlexxIT/StreamAssist",
+  "documentation": "https://github.com/relust/VisualStreamAssist",
   "iot_class": "calculated",
-  "issue_tracker": "https://github.com/AlexxIT/StreamAssist/issues",
+  "issue_tracker": "https://github.com/relust/VisualStreamAssist/issues",
   "requirements": [],
-  "version": "v2.0.0"
+  "version": "v1.0.0"
 }
