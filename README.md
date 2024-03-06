@@ -24,9 +24,10 @@ Through this project I wanted to add to AlexxIT integration  [StreamAssist](http
 - On **Player Entity** copy exact name of your **BROWSER MODE PLAYER** of tablet browser (media_player.xxx_xxx).
 - On **Browser ID** copy exact name of your **BROWSER MODE BROWSER** (from tablet Browser Mod tab/Browser ID field).
 - On **Wake Word detection** use a URL to your MEDIA SOURCE URL. You can simulate a new automation, add action **Media Player**, select **Play media**, select a media player, and from **Pick media** select **Text to speech**, select your language and write a message.
-     - **Examples:**      - `media-source://tts/edge_tts?message=how can I help you&language=en-US-MichelleNeural`
-                          -  `media-source://tts/google_cloud?message=how can assist you&language=en-GB`
-                          - `media-source://tts/google_translate?message=yes I am listening you&language=en`  
+     - **Examples:**
+         - `media-source://tts/edge_tts?message=how can I help you&language=en-US-MichelleNeural`
+         -  `media-source://tts/google_cloud?message=how can assist you&language=en-GB`
+         - `media-source://tts/google_translate?message=yes I am listening you&language=en`  
 
 You can select Voice Assistant Pipeline for recognition process: **WAKE => STT => NLP => TTS**. By default componen will use default pipeline. You can create several **Pipelines** with different settings. And several **Stream Assist** components with different settings.
 
