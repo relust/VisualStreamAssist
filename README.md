@@ -1,2 +1,2 @@
 # VisualStreamAssist
-Through this project I wanted to add to the voice assistant made in Home Assistant a visual image and random personalized responses that are displayed on an android tablet.
+Through this project I wanted to add to the integration of AlexxIT [StreamAssist](https://github.com/AlexxIT/StreamAssist) personalized and visual responses to be played on an android tablet using the mod browser 
