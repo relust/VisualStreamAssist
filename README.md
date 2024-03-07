@@ -23,11 +23,11 @@ Through this project I wanted to add to AlexxIT integration  [StreamAssist](http
 - If you use **Rtpmic** app, **Stream URL** is `rtp://192.168.0.xxx:5555`
 - On **Player Entity** copy exact name of your **BROWSER MODE PLAYER** of tablet browser (media_player.xxx_xxx).
 - On **Browser ID** copy exact name of your **BROWSER MODE BROWSER** (from tablet Browser Mod tab/Browser ID field).
-- On **Wake Word detection** use a URL to your MEDIA SOURCE URL. You can simulate a new automation, add action **Media Player**, select **Play media**, select a media player, and from **Pick media** select **Text to speech**, select your language and write a message.
+- On **Wake Word detection** use a URL to your MEDIA SOURCE TTS SERVICE. For personalised responses, you can simulate a new automation, add action **Media Player**, select **Play media**, select a media player, and from **Pick media** select **Text to speech**, select your language and write a message. Then go to yaml mode and copy the **media_content_id url**
      - **Examples:**
          - `media-source://tts/edge_tts?message=how can I help you&language=en-US-MichelleNeural`
          -  `media-source://tts/google_cloud?message=how can assist you&language=en-GB`
-         - `media-source://tts/google_translate?message=yes I am listening you&language=en`  
+         - `media-source://tts/google_translate?message=yes Im listening you&language=en`  
 - Copy [speech.gif and listen.gif](https://github.com/relust/VisualStreamAssist/tree/main/www/voice_assistant) on `www/voice_assistant` directory and on UI **Speech Gif** and **Listen Gif** fields write the path:
      - `/local/voice_assistant/speech.gif`
      - `/local/voice_assistant/listen.gif`
