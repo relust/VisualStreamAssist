@@ -29,8 +29,8 @@ Through this project I wanted to add to AlexxIT integration  [StreamAssist](http
          -  `media-source://tts/google_cloud?message=how can assist you&language=en-GB`
          - `media-source://tts/google_translate?message=yes Im listening you&language=en`  
 - Copy [speech.gif and listen.gif](https://github.com/relust/VisualStreamAssist/tree/main/www/voice_assistant) on `www/voice_assistant` directory and on UI **Speech Gif** and **Listen Gif** fields write the path:
-     - `/local/voice_assistant/speech.gif`
-     - `/local/voice_assistant/listen.gif`
+     - `/local/voice_assistant/roomie_speech.gif`
+     - `/local/voice_assistant/roomie_listen.gif`
 - You can select Voice Assistant Pipeline for recognition process: **WAKE => STT => NLP => TTS**. By default componen will use default pipeline. You can create several **Pipelines** with different settings. And several **Stream Assist** components with different settings.
 
 
