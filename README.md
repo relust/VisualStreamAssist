@@ -20,7 +20,7 @@ Through this project I wanted to add to AlexxIT integration  [StreamAssist](http
 2. Config **Stream Assist** Integration  
    Settings > Integrations > Stream Assist > Configure
 
-- If you use **Rrpmic**, **Stream URL** is `rtp://192.168.0.xxx:5555`
+- If you use **Rtpmic** app, **Stream URL** is `rtp://192.168.0.xxx:5555`
 - On **Player Entity** copy exact name of your **BROWSER MODE PLAYER** of tablet browser (media_player.xxx_xxx).
 - On **Browser ID** copy exact name of your **BROWSER MODE BROWSER** (from tablet Browser Mod tab/Browser ID field).
 - On **Wake Word detection** use a URL to your MEDIA SOURCE URL. You can simulate a new automation, add action **Media Player**, select **Play media**, select a media player, and from **Pick media** select **Text to speech**, select your language and write a message.
