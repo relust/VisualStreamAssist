@@ -26,8 +26,8 @@ Through this project I wanted to add to AlexxIT integration  [StreamAssist](http
 - For complete **TTS service for wake word detection** and **TTS language for wake word detection** fields  you can simulate a new automation, add action **Media Player**, select **Play media**, select a media player, and from **Pick media** select **Text to speech**, select your language and write a message. Then go to yaml mode and copy the **tts service** and **tts language**. **IMPORTANT IT MUST BE THE SAME AS IN THE SELECTED PIPELINE**
      - **Example:**
            - From `media-source://tts/edge_tts?message=how can I help you&language=en-US-MichelleNeural`
-             - copy `edge_tts` to **TTT service field**
-             - copy `en-US-MichelleNeural` to **TTS language field**
+                - copy `edge_tts` to **TTT service field**
+                - copy `en-US-MichelleNeural` to **TTS language field**
 - On **Wake Word detection responses** you can put many response swith a comma between them.
      - **Example:** `how can I hel you, how can assist you, yes i`m listening`
 - Copy [speech.gif and listen.gif](https://github.com/relust/VisualStreamAssist/tree/main/www/gifs) or, after integration insallation, from Home Assistant `/config/custom_components/stream_assist/gifs`directory on `www/gifs` directory and on UI **Speech Gif** and **Listen Gif** fields write the path:
