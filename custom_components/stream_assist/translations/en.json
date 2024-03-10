@@ -17,13 +17,15 @@
     "step": {
       "init": {
         "data": {
-          "stream_source": "Stream URL (RTSP/RTMP/HTTP)",
+          "stream_source": "Stream URL (RTP/RTSP/RTMP/HTTP Ex: rtp://192.168.0.xxx:5555)",
           "camera_entity_id": "Camera Entity",
-          "player_entity_id": "Player Entity",
-          "browser_id": "Browser ID",
-          "stt_start_media": "STT start media",
-          "speech_gif": "Speech Gif",
-          "listen_gif": "Listen Gif",
+          "player_entity_id": "Player Entity (Ex: media_player.ha_display)",
+          "browser_id": "Browser mod Browser ID (Ex: ha_display)",
+          "tts_service": "TTS service for wake word detection (Ex: edge_tts/cloud/google_translate)",
+          "tts_language": "TTS language for wake word detection (Ex: en-US-MichelleNeural/en-GB&voice=AbbiNeural)",
+          "stt_start_media": "Wake Word detection responses (Ex: how can I help you, yes im listening)",
+          "speech_gif": "Speech Gif (Ex: local/gifs/jarvis_speech.gif)",
+          "listen_gif": "Listen Gif (Ex: local/gifs/jarvis_listen.gif)",
           "pipeline_id": "Pipeline (Settings > Voice Assistant)"
 
         }
