@@ -79,6 +79,8 @@ class OptionsFlowHandler(OptionsFlow):
                     #vol.Optional("player_entity_id"): cv.multi_select(players),
                     vol.Optional("player_entity_id"): str,
                     vol.Optional("browser_id"): str,
+                    vol.Optional("tts_service"): str,
+                    vol.Optional("tts_language"): str,
                     vol.Optional("stt_start_media"): str,
                     vol.Optional("speech_gif"): str,
                     vol.Optional("listen_gif"): str,
