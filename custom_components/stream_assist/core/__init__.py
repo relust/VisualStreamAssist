@@ -2,6 +2,7 @@ import asyncio
 import logging
 from typing import Callable
 import time
+import random
 
 from homeassistant.components import assist_pipeline
 from homeassistant.components import media_player
@@ -126,7 +127,13 @@ async def assist_run(
         )
 
         if event.type == PipelineEventType.WAKE_WORD_END:
-            if player_entity_id and (media_id := data.get("stt_start_media")):
+            if player_entity_id and (messages_str := data.get("stt_start_media")):
+                tts_service = data.get("tts_service")
+                tts_language = data.get("tts_language")
+                messages = [msg.strip() for msg in messages_str.split(",")]
+                random_message = random.choice(messages)
+                media_id = f"media-source://tts/{tts_service}?message={random_message}&language={tts_language}"
+
                 play_media(hass, player_entity_id, media_id, "audio")
             if player_entity_id and (media_id := data.get("speech_gif")):
                 show_popup(hass, player_entity_id, media_id, "picture", browser_id)
@@ -221,9 +228,9 @@ async def async_delay_close_popup(hass, player_entity_id, browser_id):
     close_popup(hass, player_entity_id, browser_id)
 
 
-def play_media(hass: HomeAssistant, player_entity_id: str, media_id: str, media_type: str):
+def play_media(hass: HomeAssistant, entity_id: str, media_id: str, media_type: str):
     service_data = {
-        "entity_id": player_entity_id,
+        "entity_id": entity_id,
         "media_content_id": media_player.async_process_play_media_url(hass, media_id),
         "media_content_type": media_type,
     }
@@ -238,6 +245,10 @@ def show_popup(hass: HomeAssistant, player_entity_id: str, media_id: str, media_
     service_data = {        
         "entity_id": player_entity_id,
         "browser_id": browser_id,
+        "style": """
+            --popup-min-width: 800px;
+            --popup-border-radius: 28px;
+        """,
         "content": 
         {
             "type": media_type,
