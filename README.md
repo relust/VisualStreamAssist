@@ -23,7 +23,7 @@ Through this project I wanted to add to AlexxIT integration  [StreamAssist](http
 - If you use **Rtpmic** app, **Stream URL** is `rtp://192.168.0.xxx:5555`
 - On **Player Entity** copy exact name of your **BROWSER MODE PLAYER** of tablet browser (media_player.xxx_xxx).
 - On **Browser ID** copy exact name of your **BROWSER MODE BROWSER** (from tablet Browser Mod tab/Browser ID field).
-- For **TTS service for wake word detection** **TTS language for wake word detection**  you can simulate a new automation, add action **Media Player**, select **Play media**, select a media player, and from **Pick media** select **Text to speech**, select your language and write a message. Then go to yaml mode and copy the **tts service** and **tts language**. **IMPORTANT IT MUST BE THE SAME AS IN THE SELECTED PIPELINE**
+- For complete **TTS service for wake word detection** and **TTS language for wake word detection** fields  you can simulate a new automation, add action **Media Player**, select **Play media**, select a media player, and from **Pick media** select **Text to speech**, select your language and write a message. Then go to yaml mode and copy the **tts service** and **tts language**. **IMPORTANT IT MUST BE THE SAME AS IN THE SELECTED PIPELINE**
      - **Example:**
            - From `media-source://tts/edge_tts?message=how can I help you&language=en-US-MichelleNeural`
              - copy `edge_tts` to **TTT service field**
