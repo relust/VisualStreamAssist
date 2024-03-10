@@ -6,7 +6,7 @@ Through this project I wanted to add to AlexxIT integration  [StreamAssist](http
 - Home Assistant 2023.11.3 or newer
 - A voice assistant [configured in HA](https://my.home-assistant.io/redirect/voice_assistants/) with STT and TTS in a language of your choice
 - Install [Browser Mod](https://github.com/thomasloven/hass-browser_mod) integration with HACS. The browser mod media player of android tablet will be used to stream gif files with browser_mod.popup service and audio responses with browser mod media player.
-- Install [Rtpmic](https://play.google.com/store/apps/details?id=com.rtpmic&hl=en_US) app on android tablet or or another application to stream mic or camera with sound on tablet. If you use Rtpmic app, on default settings check **auto start streaming** and **start at boot**, **target adress** `255.255.255.255`, **port** `5555`and **audio codec** `G.711a`.
+- Install [Rtpmic](https://play.google.com/store/apps/details?id=com.rtpmic&hl=en_US) app on android tablet or another application to stream mic or camera with sound on tablet. If you use Rtpmic app, on default settings check **auto start streaming** and **start at boot**, **target adress** `255.255.255.255`, **port** `5555`and **audio codec** `G.711a`.
 - Optionally install [Fully kiosk browser](https://play.google.com/store/apps/details?id=de.ozerov.fully&hl=en_US) on android tablet and Fully Kiosk Browser integration on Home Assistant.
 
 ## Installation
