@@ -1,7 +1,8 @@
 {
-  "domain": "stream_assist",
+  "domain": "visual_stream_assist",
   "name": "Visual Stream Assist",
   "codeowners": [
+    "@AlexxIT",
     "@relust"
   ],
   "config_flow": true,
