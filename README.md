@@ -29,7 +29,7 @@ Through this project I wanted to add to AlexxIT integration  [StreamAssist](http
                 - copy `edge_tts` to **TTT service field** and `en-US-MichelleNeural` to **TTS language field**
 - On **Wake Word detection responses** you can put many response swith a comma between them.
      - **Example:** `how can I hel you, how can assist you, yes i`m listening`
-- Copy [speech.gif and listen.gif](https://github.com/relust/VisualStreamAssist/tree/main/www/gifs) or, after integration insallation, from Home Assistant `/config/custom_components/stream_assist/gifs`directory on `www/gifs` directory and on UI **Speech Gif** and **Listen Gif** fields write the path:
+- Copy [speech.gif and listen.gif](https://github.com/relust/VisualStreamAssist/tree/main/www/gifs) or, after integration insallation, from Home Assistant `/config/custom_components/visual_stream_assist/gifs`directory on `www/gifs` directory and on UI **Speech Gif** and **Listen Gif** fields write the path:
      - `/local/gifs/jarvis_speech.gif`
      - `/local/gifs/jarvis_listen.gif`
 - You can select Voice Assistant Pipeline for recognition process: **WAKE => STT => NLP => TTS**. By default componen will use default pipeline. You can create several **Pipelines** with different settings. And several **Stream Assist** components with different settings.
